@@ -166,7 +166,7 @@ We've been passing a specific number of elements to functions, and that's okay, 
     sum += arguments[i];
   };
   return sum;
-}
+    }
 
 console.log(plus(2,2,2,3,2,3,4));
 
@@ -180,9 +180,9 @@ The return Statement:
 7.	Auto semicolon insertion.
 
 Anonymous Closures:
-(function() {
-  console.log('foo');
-})();
+                         (function() {
+                           console.log('foo');
+                            })();
 
 This pattern is known as a self-executing function or an anonymous closure because it doesn't have a name and any variables you create inside it are only going to be accessible inside the function.
 	Any variable created inside the above function is not going to be known to outside of this function.
@@ -202,14 +202,14 @@ Creating and name-spacing modules:
 Example:
         var ray = (function() {
 		Var abc;
-})(); // ray var is names-paced.
+        })(); // ray var is names-paced.
 
 What if we want to get something out of this function, or we want to execute something that's in this function, outside in the main application?
 3.	To satisfy the above condition, we are going to use a return statement that allows us to communicate back with the rest of the application. This can help us to expose things that we want our application to know about.
 
 Example:
-        var ray = (function() {
 
+        var ray = (function() {
 		return {
 		speak: function() {
 		console.log(‘hello’);
