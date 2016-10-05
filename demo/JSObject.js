@@ -20,6 +20,18 @@ var myCar2 = {
         console.log(speed*time);
     }
 };
+console.log(myCar2.driver);
+myCar2.drive(50,6);
 
-console.log(myCar2.maxSpeed);
-myCar2.drive(50,5);
+
+function person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+var pavan = new person("Pavan", 24);
+var james = new person("James", 26);
+
+console.log(pavan.name + " is a junior of " + james.name);
+
+
